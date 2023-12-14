@@ -9,9 +9,12 @@ table {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
+    width: 30%;
   }
   
   tr:nth-child(even) {
     background-color: #dddddd;
+    text-align: left;
+    width: 33%;
   }
   

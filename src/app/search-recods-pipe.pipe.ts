@@ -5,11 +5,10 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class SearchRecodsPipePipe implements PipeTransform {
   transform(list: any[], value: string) {
-   
-   list= list.filter(x=>x.url!=null);
-    if(value!=null && value!='')
-    {
-      debugger
+    
+    if(value!=null && value!='' && value != undefined)
+    { 
+      list= list.filter(x=>x.url!=null);
       if(value === undefined || value === null) return list;
       
       if(list.filter(function(element) {

@@ -16,7 +16,7 @@ export class ViewStoriesComponent {
 	collectionSize : any ;
 
   constructor(private service: StoriesServiceService) {  
-    // debugger 
+
      this.viwALLRecords();   
       
     // this.refreshCountries(this.Allrecords);
@@ -24,11 +24,11 @@ export class ViewStoriesComponent {
 
       viwALLRecords()
       {
-        debugger
+     
         this.service.FetchALLRecordsTitleAndURL().subscribe(
           data=>{
-            this.Allrecords=data;
-            this.refreshCountries(data);
+            this.Allrecords=data;        
+            this.refreshCountries(this.Allrecords);
           });
           
          
@@ -36,7 +36,7 @@ export class ViewStoriesComponent {
 
  
     refreshCountries(data:any[]) {
-        debugger
+     
        this.collectionSize=  data.length;
        this.Allrecords1 = data.map((Allrecords, i) => ({ id: i + 1, ...Allrecords }))
        .slice(
