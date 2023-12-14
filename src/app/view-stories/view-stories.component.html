@@ -3,11 +3,11 @@
 <h2 style="font-size: 20px;">filter by id , title, URL:<input [(ngModel)]="searchValue"  required></h2>
 
 <table class="table" style="width: 100%;">
-    <tr style="background-color: rgb(3, 56, 56); color: white;">       
-        <td><h3>story</h3></td>
-        <td><h3>TITLE</h3></td>
-        <td><h3>url</h3></td>
-        <td><h3>Show</h3></td>
+    <tr style="background-color: rgb(3, 56, 56); color: white;;">       
+        <td style="width: 10%;"><h3>story</h3></td>
+        <td style="width: 40%;"><h3>TITLE</h3></td>
+        <td style="width: 40%;"><h3>url</h3></td>
+        <td><h3>show</h3></td>
     </tr>
     <tr  *ngFor="let item of Allrecords1 | searchRecodsPipe : searchValue" >
        
