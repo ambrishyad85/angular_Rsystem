@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { StoriesServiceService } from '../Model/stories-service.service';
+import { StoriesServiceService } from '../Service/stories-service.service';
 
 @Component({
   selector: 'app-view-stories',
